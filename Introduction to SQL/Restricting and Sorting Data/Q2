@@ -1,0 +1,13 @@
+Q2. M The HR department needs a query to display all unique job codes from the EMP table. Functions
+
+Ans.
+
+SQL> SELECT DISTINCT JOB FROM EMP;
+
+JOB
+--------------------
+CLERK
+SALESMAN
+PRESIDENT
+MANAGER
+ANALYST
