@@ -1,0 +1,70 @@
+Q2. M Determine the Structure of EMP Table and its Contents. Sqlplus Command
+
+Ans.
+
+SQL> CREATE TABLE EMP
+  2  (
+  3      EMPNO NUMBER(4),
+  4      ENAME VARCHAR2(20),
+  5      JOB VARCHAR2(20),
+  6      MGR NUMBER(4),
+  7      HIREDATE DATE,
+  8      SAL NUMBER(7,2),
+  9      COMM NUMBER(7,2),
+ 10      DEPTNO NUMBER(2)
+ 11  );
+
+Table created.
+
+SQL> INSERT INTO EMP VALUES
+  2  (7369, 'SMITH', 'CLERK', 7902, '17-DEC-80', 800, NULL, 20);
+
+1 row created.
+
+SQL>
+SQL> INSERT INTO EMP VALUES
+  2  (7499, 'ALLEN', 'SALESMAN', 7698, '20-FEB-81', 1600, 300, 30);
+
+1 row created.
+
+SQL>
+SQL> INSERT INTO EMP VALUES
+  2  (7521, 'WARD', 'SALESMAN', 7698, '22-FEB-81', 1250, 500, 30);
+
+1 row created.
+
+SQL>
+SQL> INSERT INTO EMP VALUES
+  2  (7566, 'JONES', 'MANAGER', 7839, '02-APR-81', 2975, NULL, 20);
+
+1 row created.
+
+SQL>
+SQL> INSERT INTO EMP VALUES
+  2  (7788, 'SCOTT', 'ANALYST', 7566, '19-APR-87', 3000, NULL, 20);
+
+1 row created.
+
+SQL>
+SQL> INSERT INTO EMP VALUES
+  2  (7839, 'KING', 'PRESIDENT', NULL, '17-NOV-81', 5000, NULL, 10);
+
+1 row created.
+
+SQL>
+SQL> INSERT INTO EMP VALUES
+  2  (7902, 'FORD', 'ANALYST', 7566, '03-DEC-81', 3000, NULL, 20);
+
+1 row created.
+
+SQL> DESC EMP;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPNO                                              NUMBER(4)
+ ENAME                                              VARCHAR2(20)
+ JOB                                                VARCHAR2(20)
+ MGR                                                NUMBER(4)
+ HIREDATE                                           DATE
+ SAL                                                NUMBER(7,2)
+ COMM                                               NUMBER(7,2)
+ DEPTNO                                             NUMBER(2)
