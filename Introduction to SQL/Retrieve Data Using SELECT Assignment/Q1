@@ -1,0 +1,35 @@
+Q1. M Determine the Structure of DEPT Table and its Contents. Sqlplus Command
+
+Ans.
+
+SQL> CREATE TABLE DEPT
+  2  (
+  3      DEPTNO NUMBER(2),
+  4      DNAME VARCHAR2(20),
+  5      LOC VARCHAR2(20)
+  6  );
+
+Table created.
+
+SQL> INSERT INTO DEPT VALUES (10, 'ACCOUNTING', 'NEW YORK');
+
+1 row created.
+
+SQL> INSERT INTO DEPT VALUES (20, 'RESEARCH', 'DALLAS');
+
+1 row created.
+
+SQL> INSERT INTO DEPT VALUES (30, 'SALES', 'CHICAGO');
+
+1 row created.
+
+SQL> INSERT INTO DEPT VALUES (40, 'OPERATIONS', 'BOSTON');
+
+1 row created.
+
+SQL> DESC DEPT
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ DEPTNO                                             NUMBER(2)
+ DNAME                                              VARCHAR2(20)
+ LOC                                                VARCHAR2(20)
