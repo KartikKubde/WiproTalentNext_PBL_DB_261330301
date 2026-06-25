@@ -1,0 +1,12 @@
+Q3. M Display the Ename and Deptno from Emp table whose Empno is 7788. Select Statement
+
+Ans.
+
+SQL> 
+SELECT EMPNO, DEPTNO 
+FROM EMP 
+WHERE EMPNO = 7788;
+
+     EMPNO     DEPTNO
+---------- ----------
+      7788         20
